@@ -20,7 +20,7 @@ document.getElementById('visitor-form').addEventListener('submit', async functio
       console.error('Error fetching the API:', error);
       clientIpElement.textContent = 'Error';
       locationElement.textContent = 'Error';
-      greetingElement.textContent = 'An error occurred while fetching the API. Please try again.';
+      greetingElement.textContent = error;
       
       responseContainer.classList.remove('hidden');
     }
